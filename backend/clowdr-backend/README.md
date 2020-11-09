@@ -11,13 +11,13 @@ you are in a Linux or macos environment, the easiest way is to simply add a
 symbolic link to the .env file of the web app:
 
 ```bash
-$ ln -s ../clowdr-web-app/.env .env
+$ ln -s ../../.env .env
 ```
 
 Under Windows, simply create a "hard link":
 
 ```cmd
-mklink /H .env ..\clowdr-web-app\.env
+mklink /H .env ..\..\.env
 ```
 
 If you are in another environment, simply copy that file to the root of this directory.
