@@ -77,10 +77,11 @@ up.
     * `mongodb-runner`: Provides easier access to `mongodb` commands
 1. Clone [clowdr-web-app](https://github.com/clowdr-app/clowdr-web-app) - our
    Parse-based backend and React frontend
-1. Clone [clowdr-backend](https://github.com/clowdr-app/clowdr-backend) - our
-   plain Node backend for Twilio callbacks
+# TODO: The below instructions created a combined dependency closure for
+# both web-app and its backend. Is this intended?
 1. Within `clowdr-web-app`, run `npm install`
 1. Within `clowdr-web-app/backend/cloud`, run `npm install`
+# TODO: same as above for clowdr-backend
 1. Within `clowdr-backend`, run `npm install`
 1. Start the parse server. 
 
@@ -182,7 +183,7 @@ Clowdr uses Sendgrid to deliver emails to conference participants.
 | `SENDGRID_API_KEY` | Your sendgrid API key.        |
 | `SENDGRID_SENDER`  | Your verified sender address. |
 
-### Zoon
+### Zoom
 
 To use zoom embedding, you need to create a JWT app on Zoom, and set the
 instance configuration variables `ZOOM_API_KEY` and `ZOOM_API_SECRET` with the
@@ -190,9 +191,9 @@ values from Zoom.
 
 ## Configuring the CLOWDR Back-end
 
-1. Clone the (CLOWDR backend)[https://github.com/clowdr-app/clowdr-backend].
-1. Run `npm install` in the backend directory.
-1. Run `ln -s "../clowdr-web-app/.env" .env` to link the `.env` file.
+1. `cd ./backend/clowdr-backend`
+1. Run `npm install` in the clowdr-backend directory.
+1. Run `ln -s "../../.env" .env` to link the `.env` file from the repository root directory.
 1. Run `npm start`.
 
 Now you can hit "Initialize Conference" in CLOWDR and begin using the app.
