@@ -77,14 +77,13 @@ up.
     * `mongodb-runner`: Provides easier access to `mongodb` commands
 1. Clone [clowdr-web-app](https://github.com/clowdr-app/clowdr-web-app) - our
    Parse-based backend and React frontend
-# TODO: The below instructions created a combined dependency closure for
-# both web-app and its backend. Is this intended?
 1. Within `clowdr-web-app`, run `npm install`
 1. Within `clowdr-web-app/backend/cloud`, run `npm install`
-# TODO: same as above for clowdr-backend
 1. Within `clowdr-backend`, run `npm install`
 1. Start the parse server. 
-
+> TODO: The above instructions create a combined dependency closure for
+    both web-app and its backend. Is this intended?
+    
    Run this command from within `clowdr-web-app`:
    ```
    parse-server \
