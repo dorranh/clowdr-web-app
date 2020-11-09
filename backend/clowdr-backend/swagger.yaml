@@ -8,7 +8,7 @@ info:
     email: "ed@ednutting.com"
   license:
     name: "BSD 3-Clause"
-    url: "https://github.com/clowdr-app/clowdr-backend/blob/develop/LICENSE"
+    url: "https://github.com/clowdr-app/clowdr-web-app/blob/dev/backend/clowdr-backend/LICENSE"
 basePath: "/"
 tags:
 - name: "chat"
@@ -104,4 +104,4 @@ paths:
           description: ""
 externalDocs:
   description: "Clowdr Backend on Github"
-  url: "https://github.com/clowdr-app/clowdr-backend"
+  url: "https://github.com/clowdr-app/clowdr-web-app/blob/dev/backend/clowdr-backend"
